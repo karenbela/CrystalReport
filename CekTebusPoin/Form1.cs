@@ -22,7 +22,7 @@ namespace CekTebusPoin
         private string alamat, query;
         public Form1()
         {
-       
+            
             alamat = "server=localhost; database=db_poin; username=root; password=;";
             koneksi = new MySqlConnection(alamat);
 
@@ -33,7 +33,7 @@ namespace CekTebusPoin
         {
             try
             {
-                query = string.Format("select * from tbl_user where username = '{0}'", txtUsername.Text);
+                query = string.Format("select * from tbl_pengguna where username = '{0}'", txtUsername.Text);
                 ds.Clear();
                 koneksi.Open();
                 perintah = new MySqlCommand(query, koneksi);
