@@ -252,6 +252,12 @@ namespace CekTebusPoin
             this.Hide();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmPengguna frmPengguna = new FrmPengguna();
+            frmPengguna.Show();
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
